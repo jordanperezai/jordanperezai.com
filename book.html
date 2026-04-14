@@ -90,6 +90,33 @@
       overflow: hidden;
       border-radius: 12px;
     }
+
+    .booking-footer {
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .booking-footer p {
+      font-size: 14px;
+      color: var(--text-dim);
+      margin-bottom: 0;
+    }
+
+    .booking-footer a {
+      color: var(--text);
+      transition: color 0.2s;
+    }
+
+    .booking-footer a:hover {
+      color: var(--accent);
+    }
+
+    .booking-footer .sep {
+      color: var(--border);
+      margin: 0 10px;
+    }
   </style>
 </head>
 <body>
@@ -105,6 +132,10 @@
     <h1>Book a call</h1>
     <p>30 minutes. Quick call to talk about how AI can work for your business.</p>
     <iframe src="https://api.leadconnectorhq.com/widget/booking/0ftDyqM74xw1NKTnxnOJ" scrolling="no" id="ghl-booking"></iframe>
+
+    <div class="booking-footer">
+      <p>Prefer to email? <a href="mailto:jordan@arugami.com">jordan@arugami.com</a><span class="sep">·</span><a href="https://linkedin.com/in/jordanperezai" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
   </div>
 
   <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
